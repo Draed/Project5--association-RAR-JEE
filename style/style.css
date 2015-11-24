@@ -1,0 +1,57 @@
+body {
+ background-image: url("../picture/background.jpg"); 
+ background-color: black;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+
+ color: white;
+ font-size: 15px;
+}
+
+ul {
+ padding-right: 20%;
+ list-style-type:none;
+ top: 8%;
+ }
+
+li {
+ margin-left:1%;
+ padding:5px;
+ width: 10%;
+ height: 100%;
+ float:right; /*pour IE*/
+ text-decoration:none;
+ text-align:center;
+ }
+
+ul li a {
+ text-decoration:none;
+ text-align:center;
+ /*pour avoir un effet "outset" avec IE :*/
+ border-color:#DCDCDC #696969 #696969 #DCDCDC;
+ }
+
+ul li a:hover {
+ border-bottom: medium solid white;
+ } 
+
+ul li a:link {
+	color: white;
+}
+
+ul li a:visited {
+	color: white;
+}
+
+@keyframes slidy {
+	0% { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; }
+}
